@@ -50,7 +50,7 @@ Cet outil est un analyseur statique pour les projets Java. Il permet d'extraire 
 ## Configuration
 - Le seuil pour identifier les classes avec "trop" de méthodes est configurable dans l'interface.
 - Les chemins d'exportation pour les fichiers DOT et PNG sont actuellement définis dans le code. Pour les modifier :
-  - Dans `CLIApp`, cherchez la ligne contenant `String filePath = "C:\\Users\\Ayoub\\Downloads\\"` et ajustez le chemin.
+  - Dans `CLIApp`, cherchez la ligne contenant `String filePath = "Path"` et ajustez le chemin.
   - Dans `GUIApp`, cherchez une ligne similaire et ajustez-la de la même manière.
 
 ## Dépannage
