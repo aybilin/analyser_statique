@@ -135,7 +135,7 @@ public class GUIApp {
         }
 
         // Construction du chemin complet
-        String filePath = "C:\\Users\\Ayoub\\Downloads\\" + fileName;
+        String filePath = "./Results/" + fileName;
 
         // Exporter le graphe d'appel
         analyzer.exportCallGraphToDot(filePath);

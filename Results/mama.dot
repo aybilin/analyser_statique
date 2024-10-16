@@ -1,0 +1,19 @@
+digraph CallGraph {
+  "TaxVisitor.computeTax" -> "TaxVisitor.println";
+  "TaxVisitor.computeTax" -> "TaxVisitor.getClass";
+  "TaxVisitor.computeTax" -> "TaxVisitor.getSimpleName";
+  "TaxVisitor.computeTax" -> "TaxVisitor.getPrice";
+  "Product.Product" -> "Product.setName";
+  "Product.Product" -> "Product.setPrice";
+  "Tobacco.accept" -> "Tobacco.visit";
+  "Liquor.accept" -> "Liquor.visit";
+  "TaxVisitor.visit" -> "TaxVisitor.computeTax";
+  "Test.main" -> "Test.asList";
+  "Test.main" -> "Test.println";
+  "Test.main" -> "Test.computeTaxForProducts";
+  "TaxHolidayVisitor.visit" -> "TaxHolidayVisitor.computeTax";
+  "Necessity.accept" -> "Necessity.visit";
+  "Test.computeTaxForProducts" -> "Test.accept";
+  "Test.computeTaxForProducts" -> "Test.println";
+  "Test.computeTaxForProducts" -> "Test.getComputedTax";
+}

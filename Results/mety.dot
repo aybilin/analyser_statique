@@ -1,0 +1,6 @@
+digraph CouplingGraph {
+    "ClassStructureVisitor (Methods: 16, Attributes: 12, Lines: 80)" -> { "ClassStructureVisitor";
+    "CLIApp (Methods: 1, Attributes: 0, Lines: 50)" -> { "CLIApp";
+    "ProjectStaticAnalyzer (Methods: 11, Attributes: 4, Lines: 105)" -> { "ProjectStaticAnalyzer";
+    "GUIApp (Methods: 5, Attributes: 5, Lines: 35)" -> { "GUIApp";
+}

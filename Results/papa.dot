@@ -1,0 +1,9 @@
+digraph CouplingGraph {
+  "Tobacco" -> "Tobacco";
+  "TaxHolidayVisitor" -> "TaxHolidayVisitor";
+  "Test" -> "Test";
+  "Necessity" -> "Necessity";
+  "Product" -> "Product";
+  "Liquor" -> "Liquor";
+  "TaxVisitor" -> "TaxVisitor";
+}

@@ -44,7 +44,7 @@ public class CLIApp {
                  String fileName = scanner.nextLine();
 
                  // Construction du chemin du fichier
-                 String filePath = "C:\\Users\\Ayoub\\Downloads\\" + fileName ;
+                 String filePath = "Results/" + fileName ;
                  analyzer.exportCallGraphToDot(filePath);
                  System.out.println("Le graphe d'appel a été exporté vers : " + filePath);
               // Après l'export du fichier .dot
@@ -52,7 +52,7 @@ public class CLIApp {
                  String generateImageResponse = scanner.nextLine().trim().toLowerCase();
 
                  if (generateImageResponse.equals("oui") || generateImageResponse.equals("o")) {
-                     String imagePath = "C:\\Users\\Ayoub\\Downloads\\" + fileName + ".png";
+                     String imagePath = "Results/" + fileName + ".png";
                      analyzer.generateGraphImage(filePath, imagePath);
                      System.out.println("L'image du graphe a été générée : " + imagePath);
                  }
